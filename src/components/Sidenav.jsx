@@ -1,11 +1,8 @@
-import React from 'react'
+import { Box } from "@chakra-ui/react";
+import React from "react";
 
 function Sidenav() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <Box as="aside"></Box>;
 }
 
-export default Sidenav
+export default Sidenav;
