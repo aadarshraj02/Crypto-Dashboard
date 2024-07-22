@@ -3,12 +3,13 @@ import {
   Button,
   Heading,
   HStack,
+  Icon,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
-import React from "react";
+import { FaRegUserCircle } from "react-icons/fa";
 
 function TopNav() {
   return (
@@ -21,7 +22,9 @@ function TopNav() {
       >
         <Heading fontSize={"24px"}>Dashboard</Heading>
         <Menu>
-          <MenuButton as={Button}>Actions</MenuButton>
+          <MenuButton>
+            <Icon as={FaRegUserCircle}></Icon>
+          </MenuButton>
           <MenuList>
             <MenuItem>Download</MenuItem>
             <MenuItem>Create a Copy</MenuItem>
