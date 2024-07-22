@@ -27,7 +27,7 @@ function Sidenav() {
     >
       <Box>
         <Heading as="h1" fontSize={"20px"} pt={"56px"} textAlign={"center"}>
-          CRYPTO DASHBOARD
+          CRYPTO
         </Heading>
         <Box mt={"6"} mx={"3"}>
           {navLinks.map((nav, index) => (
