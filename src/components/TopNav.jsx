@@ -26,11 +26,8 @@ function TopNav() {
             <Icon fontSize={"25"} as={FaRegUserCircle}></Icon>
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Logout</MenuItem>
+            <MenuItem>Support</MenuItem>
           </MenuList>
         </Menu>
       </HStack>
