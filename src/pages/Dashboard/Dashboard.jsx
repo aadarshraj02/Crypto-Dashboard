@@ -1,11 +1,14 @@
 import React from "react";
 import Sidenav from "../../components/Sidenav";
 import TopNav from "../../components/TopNav";
+import { Flex } from "@chakra-ui/react";
 
 function Dashboard() {
   return (
     <div>
-      <Sidenav /> <TopNav />
+      <Flex>
+        <Sidenav /> <TopNav />
+      </Flex>
     </div>
   );
 }
