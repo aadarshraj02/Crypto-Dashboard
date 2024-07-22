@@ -52,7 +52,7 @@ function Sidenav() {
           ))}
         </Box>
       </Box>
-      <Box mt={"6"} mx={"3"}>
+      <Box mt={"6"} mx={"3"} mb={"6"}>
         <HStack
           py={"3"}
           px={"4"}
