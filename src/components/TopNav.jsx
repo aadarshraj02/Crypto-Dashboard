@@ -17,7 +17,7 @@ function TopNav() {
       <HStack
         height={"16"}
         justify={"space-between"}
-        maxW={"60rem"}
+        maxW={"80rem"}
         mx={"auto"}
       >
         <Heading fontSize={"24px"}>Dashboard</Heading>
