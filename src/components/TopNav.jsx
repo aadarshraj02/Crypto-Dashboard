@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Heading,
   HStack,
   Icon,
@@ -14,12 +13,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 function TopNav() {
   return (
     <Box boxShadow={"xl"}>
-      <HStack
-        height={"16"}
-        justify={"space-between"}
-        maxW={"80rem"}
-        mx={"auto"}
-      >
+      <HStack height={"16"} justify={"space-between"} maxW={"80rem"} mx={"10"}>
         <Heading fontSize={"24px"}>Dashboard</Heading>
         <Menu>
           <MenuButton>
