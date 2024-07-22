@@ -4,7 +4,7 @@ import Sidenav from "../../components/Sidenav";
 function Dashboard() {
   return (
     <div>
-      <Sidenav />
+      <Sidenav /> <TopNav />
     </div>
   );
 }
