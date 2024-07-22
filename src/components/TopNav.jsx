@@ -23,7 +23,7 @@ function TopNav() {
         <Heading fontSize={"24px"}>Dashboard</Heading>
         <Menu>
           <MenuButton>
-            <Icon as={FaRegUserCircle}></Icon>
+            <Icon fontSize={"25"} as={FaRegUserCircle}></Icon>
           </MenuButton>
           <MenuList>
             <MenuItem>Download</MenuItem>
