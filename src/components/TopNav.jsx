@@ -1,8 +1,8 @@
 import {
+  Box,
   Button,
-  Container,
-  Flex,
   Heading,
+  HStack,
   Menu,
   MenuButton,
   MenuItem,
@@ -12,9 +12,14 @@ import React from "react";
 
 function TopNav() {
   return (
-    <Flex boxShadow={"xl"}>
-      <Container>
-        <Heading>Dashboard</Heading>
+    <Box boxShadow={"xl"}>
+      <HStack
+        height={"16"}
+        justify={"space-between"}
+        maxW={"60rem"}
+        mx={"auto"}
+      >
+        <Heading fontSize={"24px"}>Dashboard</Heading>
         <Menu>
           <MenuButton as={Button}>Actions</MenuButton>
           <MenuList>
@@ -25,8 +30,8 @@ function TopNav() {
             <MenuItem>Attend a Workshop</MenuItem>
           </MenuList>
         </Menu>
-      </Container>
-    </Flex>
+      </HStack>
+    </Box>
   );
 }
 
