@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, HStack, Stack } from "@chakra-ui/react";
 import React from "react";
 import { MdDashboard } from "react-icons/md";
 import { TbArrowsExchange } from "react-icons/tb";
@@ -17,7 +17,16 @@ function Sidenav() {
     },
   ];
 
-  return <Box as="aside"></Box>;
+  return (
+    <Stack>
+      {navLinks.map((nav) => (
+        <HStack>
+          <Icon as={nav.icon}></Icon>
+          <Text>{nav.text}</Text>
+        </HStack>
+      ))}
+    </Stack>
+  );
 }
 
 export default Sidenav;
