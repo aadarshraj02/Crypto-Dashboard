@@ -21,7 +21,7 @@ function Sidenav() {
   return (
     <Stack
       boxShadow="md"
-      maxWidth={"16rem"}
+      width={"16rem"}
       height={"100vh"}
       justify={"space-between"}
     >
