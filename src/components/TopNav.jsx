@@ -10,11 +10,16 @@ import {
 } from "@chakra-ui/react";
 import { FaRegUserCircle } from "react-icons/fa";
 
-function TopNav() {
+function TopNav({ title }) {
   return (
     <Box>
-      <HStack height={"16"} justify={"space-between"} maxW={"80rem"} mx={"10"}>
-        <Heading fontSize={"24px"}>Dashboard</Heading>
+      <HStack
+        height={"16"}
+        justify={"space-between"}
+        maxW={"70rem"}
+        mx={"auto"}
+      >
+        <Heading fontSize={"24px"}>{title}</Heading>
         <Menu>
           <MenuButton>
             <Icon fontSize={"25"} as={FaRegUserCircle}></Icon>

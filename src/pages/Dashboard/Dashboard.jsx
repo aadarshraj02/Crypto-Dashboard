@@ -5,11 +5,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import DashboardLayout from "../../components/DashboardLayout";
 
 function Dashboard() {
-  return (
-    <div>
-      <DashboardLayout />
-    </div>
-  );
+  return <DashboardLayout title={"Dashboard"}>Hi How are you?</DashboardLayout>;
 }
 
 export default Dashboard;
