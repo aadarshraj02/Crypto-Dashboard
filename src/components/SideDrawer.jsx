@@ -7,6 +7,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  Button,
 } from "@chakra-ui/react";
 
 const SideDrawer = ({ isOpen, onClose }) => {
@@ -19,11 +20,10 @@ const SideDrawer = ({ isOpen, onClose }) => {
           <DrawerHeader>Create your account</DrawerHeader>
 
           <DrawerBody>
-            <Input placeholder="Type here..." />
           </DrawerBody>
 
           <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
+            <Button  variant="outline" mr={3} onClick={onClose}>
               Cancel
             </Button>
             <Button colorScheme="blue">Save</Button>

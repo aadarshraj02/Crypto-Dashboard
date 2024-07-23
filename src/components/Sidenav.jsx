@@ -24,6 +24,10 @@ function Sidenav() {
       width={"16rem"}
       height={"100vh"}
       justify={"space-between"}
+      display={{
+        base: "none",
+        lg: "flex",
+      }}
     >
       <Box>
         <Heading as="h1" fontSize={"20px"} pt={"56px"} textAlign={"center"}>
