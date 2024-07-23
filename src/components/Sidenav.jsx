@@ -20,6 +20,7 @@ function Sidenav() {
 
   return (
     <Stack
+      bg={"white"}
       boxShadow={{
         base: "none",
         lg: "md",
