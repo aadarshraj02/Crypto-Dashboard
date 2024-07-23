@@ -13,7 +13,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 
 function TopNav({ title, onOpen }) {
   return (
-    <Box px={"4"}>
+    <Box px={"4"} bg={"white"}>
       <HStack
         height={"16"}
         justify={"space-between"}
