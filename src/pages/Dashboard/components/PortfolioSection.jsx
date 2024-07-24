@@ -1,5 +1,7 @@
 import { Button, HStack, Icon, Stack, Tag, Text } from "@chakra-ui/react";
 import { BsInfo } from "react-icons/bs";
+import { HiMiniArrowTrendingUp } from "react-icons/hi2";
+import { HiMiniArrowTrendingDown } from "react-icons/hi2";
 import React from "react";
 
 function PortfolioSection() {
@@ -34,8 +36,15 @@ function PortfolioSection() {
         </Stack>
       </HStack>
       <HStack>
-        <Button>Deposit</Button>
-        <Button>Withdrawal</Button>
+        <Button>
+          {" "}
+          <Icon fontSize={"18px"} mr={"2"} as={HiMiniArrowTrendingUp} /> Deposit
+        </Button>
+        <Button>
+          {" "}
+          <Icon fontSize={"18px"} mr={"2"} as={HiMiniArrowTrendingDown} />
+          Withdrawal
+        </Button>
       </HStack>
     </HStack>
   );
