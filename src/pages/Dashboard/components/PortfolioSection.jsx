@@ -13,7 +13,9 @@ function PortfolioSection() {
             <Text fontSize={"14px"}>Total Portfolio Value</Text>
             <Icon as={BsInfo}></Icon>
           </HStack>
-          <Text textStyle={"h2"}>$112,312.24</Text>
+          <Text textStyle={"h2"} fontWeight={"medium"}>
+            $112,312.24
+          </Text>
         </Stack>
         <Stack>
           <HStack color={"black.80"}>
@@ -21,11 +23,15 @@ function PortfolioSection() {
           </HStack>
           <HStack spacing={"6"}>
             <HStack>
-              <Text textStyle={"h2"}>22.39401004</Text>{" "}
+              <Text textStyle={"h2"} fontWeight={"medium"}>
+                22.39401004
+              </Text>{" "}
               <Tag colorScheme="gray">BTC</Tag>
             </HStack>
             <HStack>
-              <Text textStyle={"h2"}>₹ 15,000.00</Text>{" "}
+              <Text textStyle={"h2"} fontWeight={"medium"}>
+                ₹ 15,000.00
+              </Text>{" "}
               <Tag colorScheme="gray">INR</Tag>
             </HStack>
           </HStack>
