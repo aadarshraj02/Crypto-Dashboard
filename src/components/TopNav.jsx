@@ -23,6 +23,7 @@ function TopNav({ title, onOpen }) {
         <Icon
           as={RiMenu2Fill}
           onClick={onOpen}
+          cursor={"pointer"}
           display={{
             base: "block",
             lg: "none",
