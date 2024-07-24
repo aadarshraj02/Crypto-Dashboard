@@ -6,7 +6,7 @@ function PortfolioSection() {
   return (
     <HStack bg={"white"} borderRadius={"xl"} p={"6"}>
       <Stack>
-        <HStack color={"#535d66"}>
+        <HStack color={"black.80"}>
           <Text fontSize={"14px"}>Total Portfolio Value</Text>
           <Icon as={BsInfo}></Icon>
         </HStack>
