@@ -4,10 +4,10 @@ import React from "react";
 
 function PortfolioSection() {
   return (
-    <HStack>
+    <HStack bg={"white"} borderRadius={"xl"} p={"6"}>
       <Stack>
-        <HStack>
-          <Text>Total Portfolio Value</Text>
+        <HStack color={"#535d66"}>
+          <Text fontSize={"14px"}>Total Portfolio Value</Text>
           <Icon as={BsInfo}></Icon>
         </HStack>
       </Stack>
