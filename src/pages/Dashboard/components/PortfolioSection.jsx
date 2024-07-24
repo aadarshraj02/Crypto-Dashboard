@@ -6,8 +6,38 @@ import React from "react";
 
 function PortfolioSection() {
   return (
-    <HStack justify={"space-between"} bg={"white"} borderRadius={"xl"} p={"6"}>
-      <HStack spacing={16}>
+    <HStack
+      justify={"space-between"}
+      bg={"white"}
+      borderRadius={"xl"}
+      p={"6"}
+      align={{
+        base: "flex-start",
+        xl: "center",
+      }}
+      flexDir={{
+        base: "column",
+        xl: "row",
+      }}
+      spacing={{
+        base: 4,
+        xl: 0,
+      }}
+    >
+      <HStack
+        spacing={{
+          base: 2,
+          xl: 16,
+        }}
+        align={{
+          base: "flex-start",
+          xl: "center",
+        }}
+        flexDir={{
+          base: "column",
+          xl: "row",
+        }}
+      >
         <Stack>
           <HStack color={"black.80"}>
             <Text fontSize={"14px"}>Total Portfolio Value</Text>
@@ -21,7 +51,17 @@ function PortfolioSection() {
           <HStack color={"black.80"}>
             <Text fontSize={"14px"}>Wallet Balance</Text>
           </HStack>
-          <HStack spacing={"6"}>
+          <HStack
+            spacing={"6"}
+            align={{
+              base: "flex-start",
+              xl: "center",
+            }}
+            flexDir={{
+              base: "column",
+              sm: "row",
+            }}
+          >
             <HStack>
               <Text textStyle={"h2"} fontWeight={"medium"}>
                 22.39401004
