@@ -4,7 +4,7 @@ import { color } from "framer-motion";
 export const theme = extendTheme({
   colors: {
     p: {
-      orange: "#5f00d9",
+      purple: "#5f00d9",
       black: "#171717",
     },
     black: {
