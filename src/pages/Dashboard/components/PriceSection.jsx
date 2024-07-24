@@ -1,6 +1,6 @@
 import React from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
-import { HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import { Button, HStack, Icon, Stack, Text } from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
 
 function PriceSection() {
@@ -34,6 +34,17 @@ function PriceSection() {
           </HStack>
         </HStack>
       </Stack>
+      <HStack>
+        <Button>
+          {" "}
+          Deposit
+        </Button>
+        <Button>
+          {" "}
+         
+          Withdraw
+        </Button>
+      </HStack>
     </CustomCard>
   );
 }
