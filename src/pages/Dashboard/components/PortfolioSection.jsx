@@ -43,7 +43,7 @@ function PortfolioSection() {
         <Button>
           {" "}
           <Icon fontSize={"18px"} mr={"2"} as={HiMiniArrowTrendingDown} />
-          Withdrawal
+          Withdraw
         </Button>
       </HStack>
     </HStack>
