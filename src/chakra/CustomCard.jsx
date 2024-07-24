@@ -1,7 +1,10 @@
 import React from "react";
+import { chakra } from "@chakra-ui/react";
 
-function CustomCard() {
-  return <div></div>;
-}
-
-export default CustomCard;
+export const CustomCard = chakra("div", {
+  baseStyle: {
+    bg: "white",
+    borderRadius: "xl",
+    p: "6",
+  },
+});
