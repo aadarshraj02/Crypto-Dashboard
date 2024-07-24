@@ -4,7 +4,7 @@ import React from "react";
 
 function PortfolioSection() {
   return (
-    <HStack bg={"white"} borderRadius={"xl"} p={"6"}>
+    <HStack bg={"white"} borderRadius={"xl"} p={"6"} spacing={"16"}>
       <Stack>
         <HStack color={"black.80"}>
           <Text fontSize={"14px"}>Total Portfolio Value</Text>
@@ -16,7 +16,7 @@ function PortfolioSection() {
         <HStack color={"black.80"}>
           <Text fontSize={"14px"}>Wallet Balance</Text>
         </HStack>
-        <HStack>
+        <HStack spacing={"6"}>
           <HStack>
             <Text textStyle={"h2"}>22.39401004</Text> <Tag>BTC</Tag>
           </HStack>
