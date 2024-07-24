@@ -35,15 +35,8 @@ function PriceSection() {
         </HStack>
       </Stack>
       <HStack>
-        <Button>
-          {" "}
-          Deposit
-        </Button>
-        <Button>
-          {" "}
-         
-          Withdraw
-        </Button>
+        <Button>Buy</Button>
+        <Button>Sell</Button>
       </HStack>
     </CustomCard>
   );
