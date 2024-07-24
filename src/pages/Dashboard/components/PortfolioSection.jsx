@@ -10,6 +10,7 @@ function PortfolioSection() {
           <Text fontSize={"14px"}>Total Portfolio Value</Text>
           <Icon as={BsInfo}></Icon>
         </HStack>
+        <Text>$112,312.24</Text>
       </Stack>
     </HStack>
   );
