@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import { CustomCard } from "../../../chakra/CustomCard";
 
 function PriceSection() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <CustomCard></CustomCard>;
 }
 
-export default PriceSection
+export default PriceSection;
