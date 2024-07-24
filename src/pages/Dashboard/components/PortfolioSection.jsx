@@ -17,7 +17,12 @@ function PortfolioSection() {
           <Text fontSize={"14px"}>Wallet Balance</Text>
         </HStack>
         <HStack>
-          <Text textStyle={"h2"}>22.39401004</Text> <Tag>BTC</Tag>
+          <HStack>
+            <Text textStyle={"h2"}>22.39401004</Text> <Tag>BTC</Tag>
+          </HStack>
+          <HStack>
+            <Text textStyle={"h2"}>₹ 15,000.00</Text> <Tag>INR</Tag>
+          </HStack>
         </HStack>
       </Stack>
     </HStack>
