@@ -2,6 +2,8 @@ import React from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
 import { Button, HStack, Icon, Stack, Text } from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
+import { IoAddCircle } from "react-icons/io5";
+import { FaCircleMinus } from "react-icons/fa6";
 
 function PriceSection() {
   return (
@@ -36,8 +38,14 @@ function PriceSection() {
           </HStack>
         </Stack>
         <HStack>
-          <Button>Buy</Button>
-          <Button>Sell</Button>
+          <Button>
+            {" "}
+            <Icon as={IoAddCircle} mr={2}></Icon> Buy
+          </Button>
+          <Button>
+            {" "}
+            <Icon as={FaCircleMinus} mr={2}></Icon>Sell
+          </Button>
         </HStack>
       </HStack>
     </CustomCard>
