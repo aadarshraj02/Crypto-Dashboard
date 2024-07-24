@@ -1,6 +1,6 @@
 import React from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
-import { Button, HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import { Button, Flex, HStack, Icon, Stack, Text } from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoAddCircle } from "react-icons/io5";
 import { FaCircleMinus } from "react-icons/fa6";
@@ -8,7 +8,7 @@ import { FaCircleMinus } from "react-icons/fa6";
 function PriceSection() {
   return (
     <CustomCard>
-      <HStack>
+      <Flex justifyContent={"space-between"} align={"start"}>
         <Stack>
           <HStack color={"black.80"}>
             <Text fontSize={"14px"}>Wallet Balance</Text>
@@ -47,7 +47,7 @@ function PriceSection() {
             <Icon as={FaCircleMinus} mr={2}></Icon>Sell
           </Button>
         </HStack>
-      </HStack>
+      </Flex>
     </CustomCard>
   );
 }
