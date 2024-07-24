@@ -6,13 +6,7 @@ import React from "react";
 
 function PortfolioSection() {
   return (
-    <HStack
-      justify={"space-between"}
-      bg={"white"}
-      borderRadius={"xl"}
-      p={"6"}
-      spacing={"16"}
-    >
+    <HStack justify={"space-between"} bg={"white"} borderRadius={"xl"} p={"6"}>
       <HStack spacing={16}>
         <Stack>
           <HStack color={"black.80"}>
@@ -27,10 +21,12 @@ function PortfolioSection() {
           </HStack>
           <HStack spacing={"6"}>
             <HStack>
-              <Text textStyle={"h2"}>22.39401004</Text> <Tag>BTC</Tag>
+              <Text textStyle={"h2"}>22.39401004</Text>{" "}
+              <Tag colorScheme="gray">BTC</Tag>
             </HStack>
             <HStack>
-              <Text textStyle={"h2"}>₹ 15,000.00</Text> <Tag>INR</Tag>
+              <Text textStyle={"h2"}>₹ 15,000.00</Text>{" "}
+              <Tag colorScheme="gray">INR</Tag>
             </HStack>
           </HStack>
         </Stack>
