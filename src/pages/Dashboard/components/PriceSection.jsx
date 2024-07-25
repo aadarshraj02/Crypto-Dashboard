@@ -65,8 +65,8 @@ function PriceSection() {
       <Tabs variant="soft-rounded">
         <Flex justify={"end"}>
           <TabList bg={"black.5"} p={"3px"}>
-            {["1 H", "1 D", "1 W", "1 M"].map((tab) => (
-              <Tab fontSize={"sm"} p={"6px"} borderRadius={"4"}>
+            {["1 H", "1 D", "1 W", "1 M"].map((tab, index) => (
+              <Tab key={index} fontSize={"sm"} p={"6px"} borderRadius={"4"}>
                 {tab}
               </Tab>
             ))}
