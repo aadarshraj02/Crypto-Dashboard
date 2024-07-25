@@ -7,6 +7,11 @@ import {
   Icon,
   Image,
   Stack,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
   Text,
 } from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
@@ -57,14 +62,27 @@ function PriceSection() {
           </Button>
         </HStack>
       </Flex>
-      <Image src="/graph.svg" width={"100%"}></Image>
-      <HStack justify={"space-between"}>
-        {timeStamps.map((timestamp) => (
-          <Text key={timestamp} fontSize={"sm"} color={"black.80"}>
-            {timestamp}
-          </Text>
-        ))}
-      </HStack>
+      <Tabs variant="soft-rounded" colorScheme="green">
+        <TabList>
+          <Tab>Tab 1</Tab>
+          <Tab>Tab 2</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <Image src="/graph.svg" width={"100%"} mt={"3rem"}></Image>
+            <HStack justify={"space-between"}>
+              {timeStamps.map((timestamp) => (
+                <Text key={timestamp} fontSize={"sm"} color={"black.80"}>
+                  {timestamp}
+                </Text>
+              ))}
+            </HStack>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </CustomCard>
   );
 }
