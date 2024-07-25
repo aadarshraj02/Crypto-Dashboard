@@ -26,7 +26,7 @@ function Dashboard() {
           <Transactions />
         </GridItem>
         <GridItem colSpan={1}>
-          <InfoCard />
+          <InfoCard imgUrl={"/dot_bg.svg"} />
         </GridItem>
       </Grid>
     </DashboardLayout>
