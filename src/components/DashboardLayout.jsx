@@ -21,12 +21,17 @@ function DashboardLayout({ title, children }) {
       <SideDrawer isOpen={isOpen} onClose={onClose} />
       <Box flexGrow={1}>
         <TopNav title={title} onOpen={onOpen} />
-        <Container maxW={"70rem"} mt={"6"}>
+        <Container
+          overflowX={"hidden"}
+          overflowY={"auto"}
+          maxW={"70rem"}
+          mt={"6"}
+          h="calc(100vh - 90px)"
+        >
           {children}
         </Container>
       </Box>
     </Flex>
-    
   );
 }
 
