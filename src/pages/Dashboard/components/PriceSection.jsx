@@ -1,6 +1,14 @@
 import React from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
-import { Button, Flex, HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  HStack,
+  Icon,
+  Image,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoAddCircle } from "react-icons/io5";
 import { FaCircleMinus } from "react-icons/fa6";
@@ -48,6 +56,7 @@ function PriceSection() {
           </Button>
         </HStack>
       </Flex>
+      <Image src="/graph.svg" width={"100%"}></Image>
     </CustomCard>
   );
 }

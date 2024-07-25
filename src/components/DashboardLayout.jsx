@@ -26,6 +26,7 @@ function DashboardLayout({ title, children }) {
         </Container>
       </Box>
     </Flex>
+    
   );
 }
 
