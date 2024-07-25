@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
 import { LiaRupeeSignSolid } from "react-icons/lia";
@@ -34,9 +34,14 @@ function Transactions() {
       <Stack>
         {transactions.map((transaction, index) => (
           <Flex key={index}>
-            <Box boxSize={10} borderRadius={"full"}>
+            <Grid
+              placeItems="center"
+              bg={"black.5"}
+              boxSize={10}
+              borderRadius={"full"}
+            >
               <Icon as={transaction.icon}></Icon>
-            </Box>
+            </Grid>
           </Flex>
         ))}
       </Stack>
