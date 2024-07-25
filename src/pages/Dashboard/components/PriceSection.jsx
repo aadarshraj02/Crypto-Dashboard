@@ -63,10 +63,12 @@ function PriceSection() {
         </HStack>
       </Flex>
       <Tabs variant="soft-rounded" colorScheme="green">
-        <TabList>
-          <Tab>Tab 1</Tab>
-          <Tab>Tab 2</Tab>
-        </TabList>
+        <Flex justify={"end"}>
+          <TabList>
+            <Tab>Tab 1</Tab>
+            <Tab>Tab 2</Tab>
+          </TabList>
+        </Flex>
         <TabPanels>
           <TabPanel>
             <Image src="/graph.svg" width={"100%"} mt={"3rem"}></Image>
