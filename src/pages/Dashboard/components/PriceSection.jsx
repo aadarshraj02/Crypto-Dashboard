@@ -14,6 +14,7 @@ import { IoAddCircle } from "react-icons/io5";
 import { FaCircleMinus } from "react-icons/fa6";
 
 function PriceSection() {
+  const timeStamps = ["11:15 AM", "12:15 PM", "1:15 PM", "2:15 PM", "3:15 PM"];
   return (
     <CustomCard>
       <Flex justifyContent={"space-between"} align={"start"}>
@@ -57,6 +58,13 @@ function PriceSection() {
         </HStack>
       </Flex>
       <Image src="/graph.svg" width={"100%"}></Image>
+      <HStack>
+        {timeStamps.map((timestamp) => (
+          <Text key={timestamp} fontSize={"sm"} color={"black.80"}>
+            {timestamp}
+          </Text>
+        ))}
+      </HStack>
     </CustomCard>
   );
 }
