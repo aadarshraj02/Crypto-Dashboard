@@ -4,7 +4,9 @@ import React from "react";
 function Transactions() {
   return (
     <CustomCard>
-      <Text>Recent Transactions</Text>
+      <Text fontSize={"sm"} color={"black.80"}>
+        Recent Transactions
+      </Text>
     </CustomCard>
   );
 }
