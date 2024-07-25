@@ -33,7 +33,11 @@ function Dashboard() {
           />
         </GridItem>
         <GridItem colSpan={1}>
-          <InfoCard imgUrl={"/grid_bg.svg"} text="" tagText="contact" />
+          <InfoCard
+            imgUrl={"/grid_bg.svg"}
+            text="Learn more about our real estate, mortgage, and corporate account services."
+            tagText="contact"
+          />
         </GridItem>
       </Grid>
     </DashboardLayout>
