@@ -26,10 +26,14 @@ function Dashboard() {
           <Transactions />
         </GridItem>
         <GridItem colSpan={1}>
-          <InfoCard imgUrl={"/dot_bg.svg"} />
+          <InfoCard
+            imgUrl={"/dot_bg.svg"}
+            text=" Learn more about Loans - keep you Bitcoin, access it's value without selling it."
+            tagText="Loan"
+          />
         </GridItem>
         <GridItem colSpan={1}>
-          <InfoCard imgUrl={"/grid_bg.svg"} />
+          <InfoCard imgUrl={"/grid_bg.svg"} text="" tagText="contact" />
         </GridItem>
       </Grid>
     </DashboardLayout>
