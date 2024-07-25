@@ -1,4 +1,13 @@
-import { Box, Divider, Flex, Grid, Icon, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Grid,
+  Icon,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import React, { Fragment } from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
 import { LiaRupeeSignSolid } from "react-icons/lia";
@@ -27,7 +36,7 @@ function Transactions() {
   ];
 
   return (
-    <CustomCard>
+    <CustomCard h={"full"}>
       <Text mb={6} fontSize={"sm"} color={"black.80"}>
         Recent Transactions
       </Text>
@@ -57,6 +66,9 @@ function Transactions() {
           </Fragment>
         ))}
       </Stack>
+      <Button width={"full"} mt={6} colorScheme="gray">
+        View All
+      </Button>
     </CustomCard>
   );
 }
