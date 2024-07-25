@@ -58,7 +58,7 @@ function PriceSection() {
         </HStack>
       </Flex>
       <Image src="/graph.svg" width={"100%"}></Image>
-      <HStack>
+      <HStack justify={"space-between"}>
         {timeStamps.map((timestamp) => (
           <Text key={timestamp} fontSize={"sm"} color={"black.80"}>
             {timestamp}
