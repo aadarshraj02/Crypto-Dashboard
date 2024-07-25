@@ -33,7 +33,7 @@ function Transactions() {
       </Text>
       <Stack>
         {transactions.map((transaction, index) => (
-          <Flex key={index}>
+          <Flex key={index} gap={4}>
             <Grid
               placeItems="center"
               bg={"black.5"}
@@ -42,15 +42,14 @@ function Transactions() {
             >
               <Icon as={transaction.icon}></Icon>
             </Grid>
-            <Flex justify={"space-between"}>
-              <Stack>
-                <Text fontSize={"sm"} color={"black.80"}>
-                  {transaction.text}
-                </Text>
+            <Flex justify={"space-between"} width={"full"}>
+              <Stack spacing={0}>
+                <Text textStyle="h6">{transaction.text}</Text>
                 <Text fontSize={"sm"} color={"black.40"}>
                   {transaction.timestamp}
                 </Text>
               </Stack>
+              <Text textStyle="h6">{transaction.amount}</Text>
             </Flex>
           </Flex>
         ))}
