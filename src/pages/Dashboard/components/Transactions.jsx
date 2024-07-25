@@ -42,6 +42,16 @@ function Transactions() {
             >
               <Icon as={transaction.icon}></Icon>
             </Grid>
+            <Flex justify={"space-between"}>
+              <Stack>
+                <Text fontSize={"sm"} color={"black.80"}>
+                  {transaction.text}
+                </Text>
+                <Text fontSize={"sm"} color={"black.40"}>
+                  {transaction.timestamp}
+                </Text>
+              </Stack>
+            </Flex>
           </Flex>
         ))}
       </Stack>
