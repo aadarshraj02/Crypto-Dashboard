@@ -1,6 +1,6 @@
 import React from "react";
 import { CustomCard } from "../../../chakra/CustomCard";
-import { Tag } from "@chakra-ui/react";
+import { Tag, Text } from "@chakra-ui/react";
 
 function InfoCard({ imgUrl }) {
   return (
@@ -9,6 +9,10 @@ function InfoCard({ imgUrl }) {
         {" "}
         Loan
       </Tag>
+      <Text textStyle={"h5"}>
+        Learn more about Loans - keep your Bitcoin, access it's value without
+        selling it.
+      </Text>
     </CustomCard>
   );
 }
