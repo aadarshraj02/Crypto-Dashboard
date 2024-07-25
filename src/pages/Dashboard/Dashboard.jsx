@@ -28,6 +28,9 @@ function Dashboard() {
         <GridItem colSpan={1}>
           <InfoCard imgUrl={"/dot_bg.svg"} />
         </GridItem>
+        <GridItem colSpan={1}>
+          <InfoCard imgUrl={"/grid_bg.svg"} />
+        </GridItem>
       </Grid>
     </DashboardLayout>
   );
