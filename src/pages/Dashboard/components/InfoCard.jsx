@@ -5,7 +5,10 @@ import { Tag } from "@chakra-ui/react";
 function InfoCard() {
   return (
     <CustomCard>
-      <Tag bg="p.purple"></Tag>
+      <Tag bg="p.purple" color={"white"} borderRadius={"full"}>
+        {" "}
+        Loan
+      </Tag>
     </CustomCard>
   );
 }
