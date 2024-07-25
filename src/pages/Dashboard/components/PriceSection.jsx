@@ -62,11 +62,14 @@ function PriceSection() {
           </Button>
         </HStack>
       </Flex>
-      <Tabs variant="soft-rounded" colorScheme="green">
+      <Tabs variant="soft-rounded">
         <Flex justify={"end"}>
-          <TabList>
-            <Tab>Tab 1</Tab>
-            <Tab>Tab 2</Tab>
+          <TabList bg={"black.5"} p={"3px"}>
+            {["1 H", "1 D", "1 W", "1 M"].map((tab) => (
+              <Tab fontSize={"sm"} p={"6px"} borderRadius={"4"}>
+                {tab}
+              </Tab>
+            ))}
           </TabList>
         </Flex>
         <TabPanels>
