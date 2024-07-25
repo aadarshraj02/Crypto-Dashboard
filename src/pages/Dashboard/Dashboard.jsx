@@ -27,6 +27,7 @@ function Dashboard() {
         </GridItem>
         <GridItem colSpan={1}>
           <InfoCard
+            inverted={false}
             imgUrl={"/dot_bg.svg"}
             text=" Learn more about Loans - keep you Bitcoin, access it's value without selling it."
             tagText="Loan"
@@ -34,6 +35,7 @@ function Dashboard() {
         </GridItem>
         <GridItem colSpan={1}>
           <InfoCard
+            inverted={true}
             imgUrl={"/grid_bg.svg"}
             text="Learn more about our real estate, mortgage, and corporate account services."
             tagText="contact"
