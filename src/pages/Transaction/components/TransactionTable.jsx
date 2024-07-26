@@ -110,7 +110,10 @@ function TransactionTable() {
                   <Text>{data.time}</Text>
                 </Stack>
               </td>
-              <td>{data.type.name}</td>
+              <td>  <Stack>
+                  <Text>{data.type.name}</Text>
+                  <Text>{data.type?.tag}</Text>
+                </Stack></td>
               <td>{data.amount}</td>
               <td>{data.status}</td>
             </Tr>
