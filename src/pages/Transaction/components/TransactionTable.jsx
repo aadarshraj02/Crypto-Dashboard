@@ -106,7 +106,7 @@ function TransactionTable() {
             <Tr key={index}>
               <td>{data.id}</td>
               <td>
-                <Stack>
+                <Stack spacing={0}>
                   <Text fontSize={"sm"} fontWeight={"medium"}>
                     {data.date}
                   </Text>
@@ -121,7 +121,7 @@ function TransactionTable() {
               </td>
               <td>
                 {" "}
-                <Stack>
+                <Stack spacing={0}>
                   <Text fontSize={"sm"} fontWeight={"medium"}>
                     {data.type.name}
                   </Text>
