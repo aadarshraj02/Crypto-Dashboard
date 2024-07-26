@@ -9,6 +9,8 @@ import {
   Td,
   TableCaption,
   TableContainer,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
 
 function TransactionTable() {
@@ -102,7 +104,12 @@ function TransactionTable() {
           {tableData.map((data, index) => (
             <Tr key={index}>
               <td>{data.id}</td>
-              <td>{data.date}</td>
+              <td>
+                <Stack>
+                  <Text>{data.date}</Text>
+                  <Text>{data.time}</Text>
+                </Stack>
+              </td>
               <td>{data.type.name}</td>
               <td>{data.amount}</td>
               <td>{data.status}</td>
