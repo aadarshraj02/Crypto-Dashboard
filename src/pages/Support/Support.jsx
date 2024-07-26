@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import DashboardLayout from "../../components/DashboardLayout";
 
 function Support() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <DashboardLayout></DashboardLayout>;
 }
 
-export default Support
+export default Support;
