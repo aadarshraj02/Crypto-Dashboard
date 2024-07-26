@@ -107,19 +107,39 @@ function TransactionTable() {
               <td>{data.id}</td>
               <td>
                 <Stack>
-                  <Text>{data.date}</Text>
-                  <Text>{data.time}</Text>
+                  <Text fontSize={"sm"} fontWeight={"medium"}>
+                    {data.date}
+                  </Text>
+                  <Text
+                    fontSize={"xs"}
+                    fontWeight={"medium"}
+                    color={"black.60"}
+                  >
+                    {data.time}
+                  </Text>
                 </Stack>
               </td>
               <td>
                 {" "}
                 <Stack>
-                  <Text>{data.type.name}</Text>
-                  <Text>{data.type?.tag}</Text>
+                  <Text fontSize={"sm"} fontWeight={"medium"}>
+                    {data.type.name}
+                  </Text>
+                  <Text
+                    fontSize={"xs"}
+                    fontWeight={"medium"}
+                    color={"black.60"}
+                  >
+                    {data.type?.tag}
+                  </Text>
                 </Stack>
               </td>
-              <td>{data.amount}</td>
-              <td>{data.status}</td>
+              <td fontSize={"sm"} fontWeight={"medium"}>
+                {data.amount}
+              </td>
+              <td fontSize={"sm"} fontWeight={"medium"}>
+                {data.status}
+              </td>
             </Tr>
           ))}
         </Tbody>
