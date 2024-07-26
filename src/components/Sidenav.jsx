@@ -3,9 +3,16 @@ import React from "react";
 import { MdDashboard } from "react-icons/md";
 import { TbArrowsExchange } from "react-icons/tb";
 import { BiSupport } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Sidenav() {
+  const location = useLocation();
+  console.log(location);
+
+  const isActiveLink = (link) => {
+    return location.pathname === link;
+  };
+
   const navLinks = [
     {
       icon: MdDashboard,
@@ -41,10 +48,11 @@ function Sidenav() {
           {navLinks.map((nav, index) => (
             <Link to={nav.link} key={index}>
               <HStack
+                bg={isActiveLink(nav.link) ? "#f3f3f7" : "transparent"}
+                color={isActiveLink(nav.link) ? "#171717" : "#797e82"}
                 py={"3"}
                 px={"4"}
                 gap={"4"}
-                color={"#797e82"}
                 borderRadius={"10px"}
                 _hover={{
                   bg: "#f3f3f7",
@@ -67,8 +75,9 @@ function Sidenav() {
             py={"3"}
             px={"4"}
             gap={"4"}
-            color={"#797e82"}
             borderRadius={"10px"}
+            bg={isActiveLink("/support") ? "#f3f3f7" : "transparent"}
+            color={isActiveLink("/support") ? "#171717" : "#797e82"}
             _hover={{
               bg: "#f3f3f7",
               color: "#171717",
