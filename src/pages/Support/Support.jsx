@@ -2,7 +2,7 @@ import React from "react";
 import DashboardLayout from "../../components/DashboardLayout";
 
 function Support() {
-  return <DashboardLayout></DashboardLayout>;
+  return <DashboardLayout title={"Support"}></DashboardLayout>;
 }
 
 export default Support;
