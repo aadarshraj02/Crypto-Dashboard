@@ -12,6 +12,7 @@ import {
   Stack,
   Text,
   Divider,
+  Tag,
 } from "@chakra-ui/react";
 
 function TransactionTable() {
@@ -104,7 +105,9 @@ function TransactionTable() {
         <Tbody>
           {tableData.map((data, index) => (
             <Tr key={index}>
-              <td>{data.id}</td>
+              <td fontSize={"sm"} fontWeight={"medium"}>
+                {data.id}
+              </td>
               <td>
                 <Stack spacing={0}>
                   <Text fontSize={"sm"} fontWeight={"medium"}>
@@ -138,7 +141,14 @@ function TransactionTable() {
                 {data.amount}
               </td>
               <td fontSize={"sm"} fontWeight={"medium"}>
-                {data.status}
+                <Tag
+                  color={"white"}
+                  rounded={"full"}
+                  bg={statusColor[data.status]}
+                >
+                  {" "}
+                  {data.status}
+                </Tag>
               </td>
             </Tr>
           ))}
