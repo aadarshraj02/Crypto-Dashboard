@@ -3,6 +3,7 @@ import React from "react";
 import DashboardLayout from "../../components/DashboardLayout";
 import { FaArrowDown } from "react-icons/fa6";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import TransactionTable from "./components/TransactionTable";
 
 function Transaction() {
   const tabs = [
@@ -52,7 +53,7 @@ function Transaction() {
           />
           <TabPanels>
             <TabPanel>
-              <p>one!</p>
+              <TransactionTable />
             </TabPanel>
             <TabPanel>
               <p>two!</p>
