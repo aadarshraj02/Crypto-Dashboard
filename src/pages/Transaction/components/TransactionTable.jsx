@@ -98,7 +98,17 @@ function TransactionTable() {
             <Th>Status</Th>
           </Tr>
         </Thead>
-        <Tbody></Tbody>
+        <Tbody>
+          {tableData.map((data, index) => (
+            <Tr key={index}>
+              <td>{data.id}</td>
+              <td>{data.date}</td>
+              <td>{data.type.name}</td>
+              <td>{data.amount}</td>
+              <td>{data.status}</td>
+            </Tr>
+          ))}
+        </Tbody>
       </Table>
     </TableContainer>
   );
