@@ -37,7 +37,7 @@ function Transaction() {
   ];
 
   return (
-    <DashboardLayout>
+    <DashboardLayout title={"Transaction"}>
       <Flex justify={"end"} mt={6} mb={3}>
         <Button>
           {" "}
