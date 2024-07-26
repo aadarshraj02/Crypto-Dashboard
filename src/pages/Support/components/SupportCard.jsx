@@ -16,8 +16,14 @@ import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 function SupportCard() {
   return (
-    <Flex>
-      <Stack>
+    <Flex
+      gap={6}
+      flexDirection={{
+        base: "column",
+        xl: "row",
+      }}
+    >
+      <Stack maxW={"24rem"}>
         <Icon as={IoMdMail} boxSize={6} color={"p.purple"}></Icon>
         <Text fontWeight={"bold"} as={"h1"} textStyle={"h1"}>
           Contact Us
@@ -28,13 +34,18 @@ function SupportCard() {
         </Text>
       </Stack>
 
-      <Card p={6} borderRadius={"1rem"}>
+      <Card p={6} borderRadius={"1rem"} flexGrow={1}>
         <Stack spacing={3}>
           <Text fontWeight={"semibold"} fontSize={"sm"}>
             You will response within 24 hours of time of submit.
           </Text>
 
-          <HStack>
+          <HStack
+            flexDirection={{
+              base: "column",
+              md: "row",
+            }}
+          >
             <FormControl>
               <FormLabel>First Name</FormLabel>
               <Input type="text" placeholder="Enter Your First Name" />
