@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   Flex,
   HStack,
@@ -51,6 +52,11 @@ function SupportCard() {
           <Textarea type="text" placeholder="Enter Your Message" />
         </FormControl>
         <Checkbox defaultChecked>I agree with Terms & Conditions</Checkbox>
+
+        <Stack>
+          <Button>Send a Message</Button>
+          <Button colorScheme="gray">Book a Meeting</Button>
+        </Stack>
       </Card>
     </Flex>
   );
