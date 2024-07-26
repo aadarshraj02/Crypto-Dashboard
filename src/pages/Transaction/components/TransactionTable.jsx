@@ -92,9 +92,11 @@ function TransactionTable() {
         <TableCaption>Imperial to metric conversion factors</TableCaption>
         <Thead>
           <Tr>
-            <Th>To convert</Th>
-            <Th>into</Th>
-            <Th isNumeric>multiply by</Th>
+            <Th>ID</Th>
+            <Th>Date & Time</Th>
+            <Th>Type</Th>
+            <Th>Amount</Th>
+            <Th>Status</Th>
           </Tr>
         </Thead>
         <Tbody>
