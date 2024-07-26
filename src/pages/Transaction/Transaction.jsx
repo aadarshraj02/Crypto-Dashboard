@@ -5,6 +5,25 @@ import { FaArrowDown } from "react-icons/fa6";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 
 function Transaction() {
+  const tabs = [
+    {
+      name: "All",
+      count: 349,
+    },
+    {
+      name: "Deposit",
+      count: 114,
+    },
+    {
+      name: "Withdraw",
+      count: 55,
+    },
+    {
+      name: "Trade",
+      count: 50,
+    },
+  ];
+
   return (
     <DashboardLayout>
       <Flex justify={"end"} mt={6} mb={3}>
