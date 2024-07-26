@@ -1,9 +1,20 @@
-import { Button, Card, Flex, Icon, TabIndicator, Tag } from "@chakra-ui/react";
+import {
+  Button,
+  Card,
+  Flex,
+  Icon,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  TabIndicator,
+  Tag,
+} from "@chakra-ui/react";
 import React from "react";
 import DashboardLayout from "../../components/DashboardLayout";
 import { FaArrowDown } from "react-icons/fa6";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import TransactionTable from "./components/TransactionTable";
+import { IoSearch } from "react-icons/io5";
 
 function Transaction() {
   const tabs = [
@@ -35,7 +46,12 @@ function Transaction() {
       </Flex>
       <Card>
         <Tabs position="relative" variant="unstyled">
-          <TabList pt={4}>
+          <TabList
+            pt={4}
+            display={"flex"}
+            justifyContent={"space-between"}
+            px={2}
+          >
             {tabs.map((tab, index) => (
               <Tab key={index} display={"flex"} gap={3}>
                 {tab.name}
@@ -44,6 +60,12 @@ function Transaction() {
                 </Tag>
               </Tab>
             ))}
+            <InputGroup maxW={"200px"}>
+              <InputLeftElement pointerEvents="none">
+                <Icon as={IoSearch}></Icon>
+              </InputLeftElement>
+              <Input type="tel" placeholder="Search..." />
+            </InputGroup>
           </TabList>
           <TabIndicator
             mt="-1.5px"
