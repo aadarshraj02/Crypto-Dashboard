@@ -34,12 +34,13 @@ function Transaction() {
       </Flex>
       <Card>
         <Tabs position="relative" variant="unstyled">
-          <TabList>
+          <TabList pt={4}>
             {tabs.map((tab, index) => (
-              <Tab key={index}>
+              <Tab key={index} display={"flex"} gap={3}>
                 {tab.name}
-
-                <Tag>{tab.count}</Tag>
+                <Tag colorScheme="gray" borderRadius={"full"}>
+                  {tab.count}
+                </Tag>
               </Tab>
             ))}
           </TabList>
