@@ -1,4 +1,4 @@
-import { Button, Card, Flex, Icon, TabIndicator } from "@chakra-ui/react";
+import { Button, Card, Flex, Icon, TabIndicator, Tag } from "@chakra-ui/react";
 import React from "react";
 import DashboardLayout from "../../components/DashboardLayout";
 import { FaArrowDown } from "react-icons/fa6";
@@ -35,9 +35,13 @@ function Transaction() {
       <Card>
         <Tabs position="relative" variant="unstyled">
           <TabList>
-            <Tab>One</Tab>
-            <Tab>Two</Tab>
-            <Tab>Three</Tab>
+            {tabs.map((tab, index) => (
+              <Tab key={index}>
+                {tab.name}
+
+                <Tag>{tab.count}</Tag>
+              </Tab>
+            ))}
           </TabList>
           <TabIndicator
             mt="-1.5px"
