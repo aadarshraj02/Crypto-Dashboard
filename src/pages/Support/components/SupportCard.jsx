@@ -1,4 +1,4 @@
-import { Flex, Icon, Stack, Text } from "@chakra-ui/react";
+import { Card, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { IoMdMail } from "react-icons/io";
 
@@ -15,6 +15,12 @@ function SupportCard() {
           us.
         </Text>
       </Stack>
+
+      <Card p={6} borderRadius={"1rem"}>
+        <Text fontWeight={"semibold"} fontSize={"sm"}>
+          You will response within 24 hours of time of submit.
+        </Text>
+      </Card>
     </Flex>
   );
 }
