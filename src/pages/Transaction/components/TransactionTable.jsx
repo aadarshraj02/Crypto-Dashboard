@@ -11,6 +11,7 @@ import {
   TableContainer,
   Stack,
   Text,
+  Divider,
 } from "@chakra-ui/react";
 
 function TransactionTable() {
@@ -90,7 +91,7 @@ function TransactionTable() {
 
   return (
     <TableContainer>
-      <Table variant="simple">
+      <Table variant="striped" colorScheme="gray">
         <Thead>
           <Tr>
             <Th>ID</Th>
@@ -110,10 +111,13 @@ function TransactionTable() {
                   <Text>{data.time}</Text>
                 </Stack>
               </td>
-              <td>  <Stack>
+              <td>
+                {" "}
+                <Stack>
                   <Text>{data.type.name}</Text>
                   <Text>{data.type?.tag}</Text>
-                </Stack></td>
+                </Stack>
+              </td>
               <td>{data.amount}</td>
               <td>{data.status}</td>
             </Tr>
