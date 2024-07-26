@@ -1,4 +1,4 @@
-import { Flex, Icon, Stack } from "@chakra-ui/react";
+import { Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { IoMdMail } from "react-icons/io";
 
@@ -7,6 +7,11 @@ function SupportCard() {
     <Flex>
       <Stack>
         <Icon as={IoMdMail}></Icon>
+        <Text textStyle={"h2"}>Contact Us</Text>
+        <Text fontSize={"sm"} color={"black.60"}>
+          Have a Question or just want to know more? Feel free to reach out to
+          us.
+        </Text>
       </Stack>
     </Flex>
   );
