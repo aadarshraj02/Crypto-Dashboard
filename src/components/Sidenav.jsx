@@ -3,6 +3,7 @@ import React from "react";
 import { MdDashboard } from "react-icons/md";
 import { TbArrowsExchange } from "react-icons/tb";
 import { BiSupport } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function Sidenav() {
   const navLinks = [
@@ -38,45 +39,48 @@ function Sidenav() {
         </Heading>
         <Box mt={"6"} mx={"3"}>
           {navLinks.map((nav, index) => (
-            <HStack
-              key={index}
-              py={"3"}
-              px={"4"}
-              gap={"4"}
-              color={"#797e82"}
-              borderRadius={"10px"}
-              _hover={{
-                bg: "#f3f3f7",
-                color: "#171717",
-                cursor: "pointer",
-              }}
-            >
-              <Icon as={nav.icon}></Icon>
-              <Text fontSize={"14px"} fontWeight={"bold"}>
-                {nav.text}
-              </Text>
-            </HStack>
+            <Link to={nav.link} key={index}>
+              <HStack
+                py={"3"}
+                px={"4"}
+                gap={"4"}
+                color={"#797e82"}
+                borderRadius={"10px"}
+                _hover={{
+                  bg: "#f3f3f7",
+                  color: "#171717",
+                  cursor: "pointer",
+                }}
+              >
+                <Icon as={nav.icon} />
+                <Text fontSize={"14px"} fontWeight={"bold"}>
+                  {nav.text}
+                </Text>
+              </HStack>
+            </Link>
           ))}
         </Box>
       </Box>
       <Box mt={"6"} mx={"3"} mb={"6"}>
-        <HStack
-          py={"3"}
-          px={"4"}
-          gap={"4"}
-          color={"#797e82"}
-          borderRadius={"10px"}
-          _hover={{
-            bg: "#f3f3f7",
-            color: "#171717",
-            cursor: "pointer",
-          }}
-        >
-          <Icon as={BiSupport}></Icon>
-          <Text fontSize={"14px"} fontWeight={"bold"}>
-            Support
-          </Text>
-        </HStack>
+        <Link to="/support">
+          <HStack
+            py={"3"}
+            px={"4"}
+            gap={"4"}
+            color={"#797e82"}
+            borderRadius={"10px"}
+            _hover={{
+              bg: "#f3f3f7",
+              color: "#171717",
+              cursor: "pointer",
+            }}
+          >
+            <Icon as={BiSupport} />
+            <Text fontSize={"14px"} fontWeight={"bold"}>
+              Support
+            </Text>
+          </HStack>
+        </Link>
       </Box>
     </Stack>
   );
