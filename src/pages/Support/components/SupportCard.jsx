@@ -11,8 +11,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { IoMdMail } from "react-icons/io";
-import { FormControl, FormLabel } from "@chakra-ui/react";
-import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
+
+import ContactCard from "./ContactCard";
 
 function SupportCard() {
   return (
@@ -33,8 +33,7 @@ function SupportCard() {
           us.
         </Text>
       </Stack>
-
-    
+      <ContactCard />
     </Flex>
   );
 }
