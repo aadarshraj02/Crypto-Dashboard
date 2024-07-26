@@ -7,7 +7,7 @@ function SupportCard() {
     <Flex>
       <Stack>
         <Icon as={IoMdMail}></Icon>
-        <Text fontWeight={"bold"} textStyle={"h2"}>
+        <Text fontWeight={"bold"} as={"h1"} textStyle={"h1"}>
           Contact Us
         </Text>
         <Text fontSize={"sm"} color={"black.60"}>
