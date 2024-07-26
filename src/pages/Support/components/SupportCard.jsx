@@ -1,6 +1,17 @@
-import { Card, Flex, Icon, Stack, Text } from "@chakra-ui/react";
+import {
+  Card,
+  Flex,
+  HStack,
+  Icon,
+  Input,
+  Stack,
+  Text,
+  Textarea,
+} from "@chakra-ui/react";
 import React from "react";
 import { IoMdMail } from "react-icons/io";
+import { FormControl, FormLabel } from "@chakra-ui/react";
+import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 function SupportCard() {
   return (
@@ -20,6 +31,26 @@ function SupportCard() {
         <Text fontWeight={"semibold"} fontSize={"sm"}>
           You will response within 24 hours of time of submit.
         </Text>
+
+        <HStack>
+          <FormControl>
+            <FormLabel>First Name</FormLabel>
+            <Input type="text" placeholder="Enter Your First Name" />
+          </FormControl>
+          <FormControl>
+            <FormLabel>Last Name</FormLabel>
+            <Input type="text" placeholder="Enter Your Last Name" />
+          </FormControl>
+        </HStack>
+        <FormControl>
+          <FormLabel>Email</FormLabel>
+          <Input type="email" placeholder="Enter Your Email" />
+        </FormControl>
+        <FormControl>
+          <FormLabel>Message</FormLabel>
+          <Textarea type="text" placeholder="Enter Your Message" />
+        </FormControl>
+        <Checkbox defaultChecked>I agree with Terms & Conditions</Checkbox>
       </Card>
     </Flex>
   );
